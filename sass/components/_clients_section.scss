@@ -10,13 +10,23 @@
 
 .list-clients {
   display: flex;
+  flex-wrap: wrap;
+  
   @extend %list;
 
   & .item {
-    width:calc((100% - 150px) / 6);
+    width:calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
   }
-  & .item:not(:last-child) {
-   margin-right: 30px;
+  & .item:nth-child(2n) {
+    margin-right: 0px;
+  }
+  // & .item:not(:last-child) {
+  //   // margin-right: 30px;
+  // }
+   & .item:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
   }
 }
 
@@ -25,7 +35,7 @@
   justify-content: center;
   align-items: center;
 
-  width: 170px;
+  width: 210px;
   height: 90px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;

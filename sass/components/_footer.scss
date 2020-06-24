@@ -1,28 +1,35 @@
 
 
 .footer{
-  padding: 60px 0px;
+  text-align: center;
+  
+  // padding: 60px 0px;
+  @extend %indent;
+
   background-color:  $footer-bg-color;
 }
 .box-address {
-  width: 231px;
+  margin: 0px auto 60px;
+  // margin: 0 auto;
+  width: 232px;
 }
 
 .footer .address {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   color:  $primary-footer-text-color;
   font-style: normal;
 }
 .footer .mail,
 .footer .phone {
-  display: inline-block;
+  display: block;
   margin-top: 9px;
   color:  $footer-text-color;
 }
 
 .appeal {
-  margin-left: 69px;
+  margin-bottom: 60px;
+  // margin-left: 69px;
 
   &-text {
     margin-bottom: 20px;
@@ -51,12 +58,14 @@
   fill:  $footer-logo-color;
 }
 .subscribe {
-  margin-left: auto;
+  margin: 0 auto;
 }
 .subscribe .form-mail {
-  margin-right: 12px;
+  display: block;
 
-  width: 358px;
+  margin-bottom: 20px; ;
+
+  width: 100%;
   padding: 15px 16px;
   font-size: 16px;
   line-height: 1.3;

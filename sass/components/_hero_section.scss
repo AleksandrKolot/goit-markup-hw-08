@@ -4,8 +4,8 @@
   align-items: center;
   text-align: center;
 
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-color: black;
@@ -19,16 +19,16 @@
   background-size: cover;
 
   &-content {
-    width: 696px;
+    width: 360px;
   }
 
   &-title {
     margin-bottom: 30px;
   
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
     color:  $hero-text-color;
-    line-height: 1.36;
+    line-height: 1.62;
     
     letter-spacing: 0.06em;
     text-transform: uppercase;
