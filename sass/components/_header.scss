@@ -1,0 +1,90 @@
+//  header 
+.header-bar {
+  border-bottom: 2px solid #ECECEC;
+}
+.hidden {
+  border: hidden; 
+}
+.main-nav{
+  display: flex;
+  align-items: center;
+}
+.nav {
+  display: block;
+  padding: 32px 0px;
+  color: $title-text-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em; 
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  &:focus, 
+  &:hover {
+   color: $accent-color;
+  }
+}
+.list-nav{
+  display: flex;
+  margin-left: 85px;
+  @extend %list;
+
+  & .item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.contacts {
+  display: flex;
+  margin-left: auto;
+  @extend %list;
+
+  & .item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.accent {
+  position: relative;
+  color: $accent-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+  
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-color;
+  }
+}
+
+
+.mail {
+ @extend %mail-phone-style;
+
+  &:hover, &:focus{
+    color:  $accent-color;
+  }
+}
+.phone {
+  @extend %mail-phone-style;
+
+  &:hover, &:focus  { 
+    color:  $accent-color;
+  }
+}
+.contacts-icon {
+  margin-right: 10px;
+  fill: #757575;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .mail:hover &,
+  .mail:focus &,
+  .phone:hover &,
+  .phone:focus & {
+    fill: #2196F3;
+  }
+}

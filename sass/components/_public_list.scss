@@ -1,0 +1,45 @@
+
+.public {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+  @extend %list;
+
+  & .item {
+    
+    box-shadow: none;
+  }
+
+  & .item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.public .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+    &:hover {
+    background-color:  $accent-color;
+  }
+}
+
+.public-icon {
+  fill: #AFB1B8;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .public .link:focus &,
+  .public .link:hover & {
+    fill:  $team-bg-color;
+  }
+}

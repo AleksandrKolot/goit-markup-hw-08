@@ -1,0 +1,40 @@
+
+
+$primary-text-color: #757575;
+$title-text-color: #212121;
+$accent-color: #2196F3;
+$primary-bg-color: #ffffff;
+$header-logo-color: #000000;
+$hero-text-color:#ffffff;
+$work-title-text-color:#ffffff;
+$team-bg-color:#F5F4FA;
+$footer-logo-color:#ffffff;
+$footer-bg-color:#2F303A;
+$primary-footer-text-color:#ffffff;
+$footer-text-color: rgba(255, 255, 255, 0.6);
+$copyright-text-color: rgba(255, 255, 255, 0.4);
+
+// общие стили для шрифтов
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $primary-text-color;
+  background-color: $primary-bg-color;
+  letter-spacing: 0.03em;
+}
+
+// общее обнуление стилей
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $title-text-color;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin: 0;
+}

@@ -1,0 +1,27 @@
+
+// общий шрифт, цвет обнуляющие стили
+@import "./utils/variables";
+
+// общие стили
+@import "./utils/placeholders";
+
+// главный размер сайта 
+@import "./components/container";
+
+// компонент logo
+@import "./components/logo";
+
+// компонент button
+@import "./components/button";
+
+// список ссылок на соц сети public
+@import "./components/public_list";
+
+// header
+@import "./components/header";
+
+// section portfolio
+@import "./components/portfolio_section";
+
+// footer
+@import "./components/footer";

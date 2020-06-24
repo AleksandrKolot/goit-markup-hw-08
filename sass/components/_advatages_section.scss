@@ -1,0 +1,47 @@
+
+
+.advantages {
+  position: relative;
+  @extend %indent;
+
+  &::after {
+    content: "";
+    position: absolute;
+    margin: 0 auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  
+    width: 1170px;
+    border-bottom: 1px solid #ECECEC;
+  }
+}
+
+.advantages .box-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background: #F5F4FA;
+  border-radius: 4px;
+}
+
+.list-advantages {
+display: flex;
+@extend %list;
+
+  & .item {
+  width:calc((100% - 90px) / 4);
+  }
+  
+  & .item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.advantages-title {
+  margin-bottom: 10px;
+  @extend %direct-title;
+}

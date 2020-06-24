@@ -1,0 +1,59 @@
+
+// общий шрифт, цвет обнуляющие стили
+@import "./utils/variables";
+
+// общие стили
+@import "./utils/placeholders";
+
+// главный размер сайта 
+@import "./components/container";
+
+// root цвета
+// утилита body
+// утилита на cсылки
+// утилита на заголовки
+// утилита на текст
+// утилита основной размер сайта container
+// утилита отступ в секциях indent 
+// утилита на h2 main-title
+
+// отступ в секциях
+// плейсхолдер на cтили ссылок mail phone
+// плейсхолдер на список list
+// плейсхолдер на h2 direct-title
+// плейсхолдер на h3 direct-title
+
+// компонент logo
+@import "./components/logo";
+
+// компонент button
+@import "./components/button";
+
+// компонент header
+@import "./components/header";
+
+// index_main_page
+
+//  Hero section
+@import "./components/hero_section";
+
+// модальное окно pop-up-window
+@import "./components/pop_up_window";
+
+// секция наши преимущества section advantages 
+@import "./components/advatages_section";
+
+//  секция чем мы занимаемся section work
+@import "./components/work_section";
+
+// секция наша команда section team
+@import "./components/team_section";
+
+// секция постоянные клиенты section clients */
+@import "./components/clients_section";
+
+
+//  footer 
+@import "./components/footer";
+
+//  portfolio_page
