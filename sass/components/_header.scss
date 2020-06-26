@@ -5,10 +5,10 @@
 .hidden {
   border: hidden; 
 }
-.main-nav{
-  display: flex;
-  align-items: center;
-}
+// .main-nav{
+//   display: flex;
+//   align-items: center;
+// }
 .nav {
   display: block;
   padding: 32px 0px;
@@ -26,8 +26,8 @@
   }
 }
 .list-nav{
-  display: flex;
-  margin-left: 85px;
+  // display: flex;
+  // margin-left: 85px;
   @extend %list;
 
   & .item:not(:last-child) {
@@ -35,8 +35,8 @@
   }
 }
 .contacts {
-  display: flex;
-  margin-left: auto;
+  // display: flex;
+  // margin-left: auto;
   @extend %list;
 
   & .item:not(:last-child) {

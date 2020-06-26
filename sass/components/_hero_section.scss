@@ -4,7 +4,7 @@
   align-items: center;
   text-align: center;
 
-  max-width: 480px;
+  max-width: 1600px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -18,20 +18,31 @@
   background-position: 50% 50%;
   background-size: cover;
 
+  
+
   &-content {
     width: 360px;
+
+    @media screen and (min-width: 1170px) {
+      width: 696px;
+    }
   }
 
   &-title {
     margin-bottom: 30px;
-  
     font-weight: 900;
     font-size: 26px;
-    color:  $hero-text-color;
     line-height: 1.62;
+    color:  $hero-text-color;
     
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (min-width: 1170px) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
+
 
 }

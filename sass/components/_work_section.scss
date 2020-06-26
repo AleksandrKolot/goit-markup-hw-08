@@ -1,7 +1,10 @@
 
 
 .work {
-  display: none;
+  @media screen and (max-width: 1169px) {
+    display: none;
+  }
+  
   @extend %indent;
 }
 .work-title {

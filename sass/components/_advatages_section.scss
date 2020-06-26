@@ -31,20 +31,51 @@
 
 .list-advantages {
   @extend %list;
-  // display: flex;
-  
-  // & .item {
-  // height:calc((100% - 90px) / 4);
-  // }
-  
+
   & .item:not(:last-child) {
-    margin-bottom: 30px;
-  //   margin-right: 30px;
-  // outline: 2px solid red;
+    margin-bottom: 30px; 
+  }
+  
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  
+    & .item {
+    width:calc((100% - 30px) / 2);
+    }
+
+    & .item:not(:last-child) {
+      margin-right: 30px;
+    }
+    
+    & .item:nth-child(2n) {
+      margin-right: 0px;
+    }
+    
+    & .item:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media screen and (min-width: 1170px) {
+  
+    & .item {
+    width:calc((100% - 90px) / 4);
+    }
+
+    & .item:not(:last-child) {
+      margin-right: 30px;
+    }
+    // outline: 2px solid red;
   }
 }
 
 .advantages-title {
+  text-align: center;
   margin-bottom: 10px;
   @extend %direct-title;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
