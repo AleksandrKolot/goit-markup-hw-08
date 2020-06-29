@@ -15,34 +15,40 @@
 <body>
   <header class="header-bar">
     <div class="container">
-      <nav class="main-nav">
-        <a href="./index.html" class="logo">Web <span class="logo-studio">Studio</span></a>
-        <ul class="list-nav">
+      <a href="./index.html" class="logo">Web&nbsp<span class="logo-studio">Studio</span></a>
+      <button type="button" class="batton-menu" aria-expanded="false" data-menu-button>
+        <svg width="40" height="40" aria-label="переключатель мобильного меню">
+          <use class="icon-menu" href="./image/sprite.svg#icon-menu"></use>
+          <use class="icon-close" href="./image/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="header-menu" data-menu>
+        <nav class="main-nav">
+          <ul class="list-nav">
+            <li class="item"><a href="./index.html" class="nav">Студия</a></li>
+            <li class="item"><a href="./portfolio.html" class="nav accent">Портфолио</a></li>
+            <li class="item"><a href="#" class="nav">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="contacts">
           <li class="item">
-            <a href="./index.html" class="nav">Студия</a>
+            <a href="mailto:info@devstudio.com" class="mail">
+              <svg class="contacts-icon" width="16px" height="11px">
+                <use href="./image/sprite.svg#envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
-          <li class="item"><a href="./portfolio.html" class="accent nav">Портфолио</a></li>
-          <li class="item"><a href="#" class="nav">Контакты</a></li>
+          <li class="item">
+            <a href="tel:+380961111111" class="phone">
+              <svg class="contacts-icon" width="10px" height="15px">
+                <use href="./image/sprite.svg#tel"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
         </ul>
-      </nav>
-      <ul class="contacts">
-        <li class="item">
-          <a href="mailto:info@devstudio.com" class="mail">
-            <svg class="contacts-icon" width="16px" height="11px">
-              <use href="./image/sprite.svg#envelope"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-        </li>
-        <li class="item">
-          <a href="tel:+380961111111" class="phone">
-            <svg class="contacts-icon" width="10px" height="15px">
-              <use href="./image/sprite.svg#tel"></use>
-            </svg>
-            +38 096 111 11 11
-          </a>
-        </li>
-      </ul>
+      </div>
     </div>
   </header>
   <main>
@@ -53,6 +59,7 @@
         <li class="item-button"><button type="button" class="button-portfolio">Веб-сайты</button></li>
         <li class="item-button"><button type="button" class="button-portfolio">Приложения</button></li>
         <li class="item-button"><button type="button" class="button-portfolio">Дизайн</button></li>
+        <li class="item-button"><button type="button" class="button-portfolio">Маркетинг</button></li>
       </ul>
       <ul class="list-portfolio">
         <li class="item">
@@ -260,6 +267,7 @@
       <!-- <p class="copyright">2020 | Developed by GoIT Students</p> -->
     </div>
   </footer>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>

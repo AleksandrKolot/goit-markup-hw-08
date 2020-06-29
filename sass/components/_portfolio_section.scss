@@ -32,24 +32,55 @@
 
  .list-button {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  
+  margin-bottom: 40px;
+  min-width: 280px;
   @extend %list;
+
+  @media screen and (min-width: 768px){
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px){
+    margin-bottom: 50px;
+  }
 
   & .item-button:not(:last-child) {
     margin-right: 8px;
+    margin-bottom: 15px;
+
+    @media screen and (min-width: 768px){
+      margin-bottom: 0px;
+    }
+  }
+  
+  & .item-button:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
   }
 }
 
 .list-portfolio {
-  display: flex;
-  flex-wrap: wrap;
   @extend %list;
+
+  @media screen and (min-width: 768px){
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .list-portfolio .item {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
   margin-bottom: 30px;
+
+  
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+  }
 
   &:focus,
   &:hover {
@@ -57,17 +88,33 @@
     0px 4px 4px rgba(0, 0, 0, 0.06), 
     0px 1px 1px rgba(0, 0, 0, 0.12);
   }
-
-  &:nth-child(3n) {
-    margin-right: 0px;
+  
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:nth-child(2n) {
+      margin-right: 0px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &:nth-child(3n) {
+      margin-right: 0px;
+    }
   }
 
-  &:nth-last-child(-n + 3) {
-     margin-bottom: 0px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0px;
+    }
   }
 }
 .img-portfolio {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list-portfolio .overlay {
@@ -83,7 +130,7 @@
   height: 100%;
   
   padding: 63px 24px;
-  width: 370px;
+  // width: 370px;
   font-size: 18px;
   line-height: 1.56; 
   color: #ffffff;
@@ -103,10 +150,13 @@
 }
 .portfolio-title {
   margin-bottom: 4px;
-
+  
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  white-space: nowrap;
+  overflow: auto;
+  text-overflow: ellipsis;
 }
 .category {
   font-size: 16px;
