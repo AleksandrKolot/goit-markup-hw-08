@@ -3,6 +3,10 @@
 .portfolio {
   padding-top: 93px;
   padding-bottom: 94px;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 120px;
+  }
 }
 .button-portfolio {
   padding: 6px 22px;
@@ -154,9 +158,12 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  white-space: nowrap;
-  overflow: auto;
-  text-overflow: ellipsis;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 .category {
   font-size: 16px;

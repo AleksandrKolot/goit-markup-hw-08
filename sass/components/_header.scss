@@ -1,15 +1,19 @@
 //  header 
-.header-bar {
+.header {
   position: relative;
   border-bottom: 2px solid #ECECEC;
+
+  @media screen and (max-width: 767px) {
+    position: fixed;
+    width: 100%;
+    background-color: $primary-bg-color;
+    z-index: 1;
+  }
 }
 .hidden {
   border: hidden; 
 }
-// .main-nav{
-//   display: flex;
-//   align-items: center;
-// }
+
 
 .batton-menu {
   margin-left: auto;

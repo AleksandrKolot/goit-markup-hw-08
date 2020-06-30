@@ -49,7 +49,7 @@ p {
   margin-right: auto;
 }
 
-.header-bar .container {
+.header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,9 +208,18 @@ p {
   fill: #F5F4FA;
 }
 
-.header-bar {
+.header {
   position: relative;
   border-bottom: 2px solid #ECECEC;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1;
+  }
 }
 
 .hidden {
@@ -415,6 +424,12 @@ p {
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 767px) {
+  .portfolio {
+    padding-top: 120px;
+  }
+}
+
 .button-portfolio {
   padding: 6px 22px;
   border: 2px solid transparent;
@@ -581,9 +596,14 @@ p {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  white-space: nowrap;
-  overflow: auto;
-  text-overflow: ellipsis;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 .category {
