@@ -16,11 +16,11 @@
   }
 
   @media screen and (min-width: 480px){
-    width: 460px;
+    width: 480px;
   }
 
   @media screen and (min-width: 768px) {
-    width: 748px;
+    width: 768px;
 
     .footer & {
       display: flex;
@@ -34,7 +34,7 @@
   }
  
   @media screen and (min-width: 1200px){
-    width: 1180px;
+    width: 1200px;
 
     .footer & {
       padding-left: 15px;

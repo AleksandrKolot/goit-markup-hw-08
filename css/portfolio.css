@@ -1,3 +1,9 @@
+@media screen and (max-width: 767px) {
+  main {
+    padding-top: 60px;
+  }
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -19,6 +25,12 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .footer {
@@ -61,13 +73,13 @@ p {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 460px;
+    width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 748px;
+    width: 768px;
   }
   .footer .container {
     display: -webkit-box;
@@ -85,7 +97,7 @@ p {
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1180px;
+    width: 1200px;
   }
   .footer .container {
     padding-left: 15px;
@@ -313,7 +325,7 @@ p {
 
 .nav {
   display: inline-block;
-  padding: 12px 0px;
+  padding: 0;
   color: #212121;
   font-weight: 500;
   font-size: 18px;
@@ -337,6 +349,12 @@ p {
 .accent {
   position: relative;
   color: #2196F3;
+}
+
+@media screen and (max-width: 767px) {
+  .accent {
+    padding-bottom: 12px;
+  }
 }
 
 .accent::before {
@@ -426,7 +444,8 @@ p {
 
 @media screen and (max-width: 767px) {
   .portfolio {
-    padding-top: 120px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -502,7 +521,7 @@ p {
   }
 }
 
-.list-portfolio .item {
+.list-portfolio .item:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -516,7 +535,6 @@ p {
 @media screen and (min-width: 1200px) {
   .list-portfolio .item {
     width: calc((100% - 60px) / 3);
-    margin-right: 30px;
   }
 }
 
@@ -547,12 +565,6 @@ p {
   .list-portfolio .item:nth-last-child(-n + 3) {
     margin-bottom: 0px;
   }
-}
-
-.img-portfolio {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .list-portfolio .overlay {

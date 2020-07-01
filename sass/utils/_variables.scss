@@ -15,6 +15,11 @@ $footer-text-color: rgba(255, 255, 255, 0.6);
 $copyright-text-color: rgba(255, 255, 255, 0.4);
 
 // общие стили для шрифтов
+main {
+  @media screen and (max-width: 767px) {
+   padding-top: 60px;
+  }
+}
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -37,4 +42,10 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }

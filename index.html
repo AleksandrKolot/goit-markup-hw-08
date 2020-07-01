@@ -54,10 +54,11 @@
   <main>
     <!-- Hero -->
     <section class="hero">
-      <div class="hero-content">
+      <div class="hero-content ">
         <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
         <button class="button" data-modal-open="">Заказать услугу</button>
       </div>
+      <!-- модальное окно -->
       <div class="backdrop is-hidden" data-modal="">
         <div class="pop-up-window">
           <form action="pop-up-form">
@@ -169,19 +170,22 @@
         <h2 class="work-title">Чем мы занимаемся</h2>
         <ul class="list-work">
           <li class="item">
-            <img src="./image/desktop.jpg" class="picture" alt="ноутбук" width="370" height="294">
+            <img srcset="./image/desktop-370.jpg 1x, ./image/desktop-370@2x.jpg 2x" src="./image/desktop-370.jpg"
+              class="picture" alt="ноутбук" width="370">
             <div class="title-box">
               <h3 class="name-title">Десктопные приложения</h3>
             </div>
           </li>
           <li class="item">
-            <img src="./image/mobile.jpg" class="picture" alt="мобильный телефон" width="370" height="294">
+            <img srcset="./image/mobile-370.jpg 1x, ./image/mobile-370@2x.jpg 2x" src="./image/mobile-370.jpg"
+              class="picture" alt="мобильный телефон" width="370">
             <div class="title-box">
               <h3 class="name-title">Мобильные приложения</h3>
             </div>
           </li>
           <li class="item">
-            <img src="./image/design.jpg" class="picture" alt="монитор с черной картой мира" width="370" height="294">
+            <img srcset="./image/design-370.jpg 1x, ./image/design-370@2x.jpg 2x" src="./image/design-370.jpg"
+              class="picture" alt="монитор с черной картой мира" width="370">
             <div class="title-box">
               <h3 class="name-title">Дизайнерские решения</h3>
             </div>
@@ -196,7 +200,8 @@
         <h2 class="team-title">Наша команда</h2>
         <ul class="list-team">
           <li class="item">
-            <img class="team-image" src="./image/nikola.jpg" alt="Николай Кучеренко" width="450" height="320">
+            <img class="team-image" srcset="./image/nikola-450.jpg 1x, ./image/nikola-450@2x.jpg 2x"
+              src="./image/nikola-450.jpg" alt="Николай Кучеренко" width="450">
             <h3 class="name-title">Николай Кучеренко</h3>
             <p class="profession">Product Designer</p>
             <!-- вставить svg -->
@@ -232,7 +237,8 @@
             </ul>
           </li>
           <li class="item">
-            <img class="team-image" src="./image/olga.jpg" alt="Ольга Иванова" width="450" height="320">
+            <img class="team-image" srcset="./image/olga-450.jpg 1x, ./image/olga-450@2x.jpg 2x"
+              src="./image/olga-450.jpg" alt="Ольга Иванова" width="450">
             <h3 class="name-title">Ольга Иванова</h3>
             <p class="profession">Frontend Developer</p>
             <!-- вставить svg -->
@@ -268,7 +274,8 @@
             </ul>
           </li>
           <li class="item">
-            <img class="team-image" src="./image/andriy.jpg" alt="Андрей Шевченко" width="450" height="320">
+            <img class="team-image" srcset="./image/andriy-450.jpg 1x, ./image/andriy-450@2x.jpg 2x"
+              src="./image/andriy-450.jpg" alt="Андрей Шевченко" width="450">
             <h3 class="name-title">Андрей Шевченко</h3>
             <p class="profession">Marketing</p>
             <!-- вставить svg -->
@@ -304,7 +311,8 @@
             </ul>
           </li>
           <li class="item">
-            <img class="team-image" src="./image/ivan.jpg" alt="Иван Николаев" width="450" height="320">
+            <img class="team-image" srcset="./image/ivan-450.jpg 1x, ./image/ivan-450@2x.jpg 2x"
+              src="./image/ivan-450.jpg" alt="Иван Николаев" width="450">
             <h3 class="name-title">Иван Николаев</h3>
             <p class="profession">UI Designer</p>
             <!-- вставить svg -->

@@ -5,7 +5,8 @@
   padding-bottom: 94px;
 
   @media screen and (max-width: 767px) {
-    padding-top: 120px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 .button-portfolio {
@@ -73,8 +74,11 @@
   }
 }
 .list-portfolio .item {
-  margin-bottom: 30px;
+  
 
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
   
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
@@ -83,7 +87,6 @@
 
   @media screen and (min-width: 1200px) {
     width: calc((100% - 60px) / 3);
-    margin-right: 30px;
   }
 
   &:focus,
@@ -115,11 +118,11 @@
     }
   }
 }
-.img-portfolio {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+// .img-portfolio {
+//   display: block;
+//   max-width: 100%;
+//   height: auto;
+// }
 
 .list-portfolio .overlay {
   position: relative;

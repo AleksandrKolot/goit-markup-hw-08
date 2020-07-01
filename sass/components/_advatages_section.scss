@@ -35,6 +35,9 @@
   & .item:not(:last-child) {
     margin-bottom: 30px; 
   }
+  @media screen and (max-width: 767px){
+    max-width: 450px;
+  }
   
   @media screen and (min-width: 768px) {
     display: flex;
@@ -57,8 +60,8 @@
     }
   }
 
-  @media screen and (min-width: 1170px) {
-  
+  @media screen and (min-width: 1200px) {
+    
     & .item {
     width:calc((100% - 90px) / 4);
     }

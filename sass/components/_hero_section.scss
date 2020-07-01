@@ -9,21 +9,74 @@
   margin-left: auto;
   margin-right: auto;
   background-color: black;
+
   background-image: linear-gradient(
   to right,
   rgba(47, 48, 58, 0.8), 
   rgba(47, 48, 58, 0.8)),
-  url('../image/hero.jpg');
+
+  url('../image/mobile-bg.jpg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 
+  @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx)  {
+    background-image: linear-gradient(
+  to right,
+  rgba(47, 48, 58, 0.8), 
+  rgba(47, 48, 58, 0.8)),
+
+  url('../image/mobile-bg@2x.jpg');
+  }
+
+
+  @media screen and (min-width: 481px) {
+    background-image:linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8), 
+      rgba(47, 48, 58, 0.8)),
+       
+      url('../image/tablet-bg@2x.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx)  {
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8), 
+      rgba(47, 48, 58, 0.8)),
+
+    url('../image/tablet-bg@2x.jpg');
+    }
+  }
   
+  @media screen and (min-width: 769px) {
+    height: 600px;
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8), 
+      rgba(47, 48, 58, 0.8)),
+
+    url('../image/desktop-bg@2x.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx)  {
+      background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8), 
+        rgba(47, 48, 58, 0.8)),
+
+      url('../image/desktop-bg@2x.jpg');
+    }
+  }
 
   &-content {
     width: 360px;
 
-    @media screen and (min-width: 1170px) {
+    @media screen and (min-width: 1200px) {
       width: 696px;
     }
   }
@@ -38,7 +91,7 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    @media screen and (min-width: 1170px) {
+    @media screen and (min-width: 1200px) {
       font-size: 44px;
       line-height: 1.36;
     }
