@@ -33,13 +33,13 @@ img {
   height: auto;
 }
 
-.work, .team, .clients, .footer {
+.work, .team, .clients {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 1199px) {
-  .work, .team, .clients, .footer {
+@media screen and (min-width: 1200px) {
+  .work, .team, .clients {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -65,6 +65,12 @@ img {
   line-height: 1.18;
   text-align: center;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .work-title, .team-title, .clients-title {
+    margin-bottom: 50px;
+  }
 }
 
 .advantages-title, .work .name-title {
@@ -746,7 +752,20 @@ img {
 
 .advantages {
   position: relative;
-  padding-top: 94px;
+}
+
+@media screen and (max-width: 1199px) {
+  .advantages {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-top: 94px;
+    padding-bottom: 0px;
+  }
 }
 
 .advantages .box-icon {
@@ -1066,6 +1085,8 @@ img {
 
 .footer {
   text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2F303A;
 }
 

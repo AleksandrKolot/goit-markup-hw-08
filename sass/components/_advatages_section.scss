@@ -2,20 +2,16 @@
 
 .advantages {
   position: relative;
-  padding-top: 94px;
-  // @extend %indent;
- 
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   margin: 0 auto;
-  //   bottom: 0;
-  //   left: 0;
-  //   right: 0;
   
-  //   width: 1170px;
-  //   border-bottom: 1px solid #ECECEC;
-  // }
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 0px;
+  }
 }
 
 .advantages .box-icon {
