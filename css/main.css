@@ -33,9 +33,16 @@ img {
   height: auto;
 }
 
-.advantages, .work, .team, .clients, .footer {
+.work, .team, .clients, .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1199px) {
+  .work, .team, .clients, .footer {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .list-nav, .contacts, .list-advantages, .list-work, .list-team, .public, .list-clients {
@@ -739,6 +746,7 @@ img {
 
 .advantages {
   position: relative;
+  padding-top: 94px;
 }
 
 .advantages .box-icon {
@@ -758,13 +766,12 @@ img {
   border-radius: 4px;
 }
 
-.list-advantages .item:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 @media screen and (max-width: 767px) {
   .list-advantages {
     max-width: 450px;
+  }
+  .list-advantages .item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
@@ -778,6 +785,7 @@ img {
   }
   .list-advantages .item {
     width: calc((100% - 30px) / 2);
+    margin-bottom: 30px;
   }
   .list-advantages .item:not(:last-child) {
     margin-right: 30px;
@@ -793,6 +801,7 @@ img {
 @media screen and (min-width: 1200px) {
   .list-advantages .item {
     width: calc((100% - 90px) / 4);
+    margin-bottom: 0px;
   }
   .list-advantages .item:not(:last-child) {
     margin-right: 30px;
@@ -1060,7 +1069,7 @@ img {
   background-color: #2F303A;
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .footer {
     text-align: left;
   }
@@ -1094,7 +1103,7 @@ img {
   margin-bottom: 60px;
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .appeal {
     margin-bottom: 0px;
   }
@@ -1130,7 +1139,7 @@ img {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .subscribe {
     margin-left: auto;
     margin-right: 0px;
@@ -1157,7 +1166,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .subscribe .form-mail {
     width: 358px;
     margin-right: 12px;

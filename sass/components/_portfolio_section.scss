@@ -4,7 +4,7 @@
   padding-top: 93px;
   padding-bottom: 94px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -118,26 +118,36 @@
     }
   }
 }
-// .img-portfolio {
-//   display: block;
-//   max-width: 100%;
-//   height: auto;
-// }
+.img-portfolio {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
 
 .list-portfolio .overlay {
   position: relative;
   overflow: hidden;
+  height: 294px;
 }
 .description {
   display: inline-block;
   position: absolute;
   top: 0;
   left: 0;
+  // min-width: 354px;
   width: 100%;
   height: 100%;
+  overflow-y: auto;
   
-  padding: 63px 24px;
-  // width: 370px;
+  padding: 49px 24px;
+  @media screen and (max-width: 767px){
+    padding: 77px 24px;
+  }
+  @media screen and (min-width: 1200px){
+    padding: 63px 24px;
+  }
+  
   font-size: 18px;
   line-height: 1.56; 
   color: #ffffff;
