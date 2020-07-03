@@ -59,62 +59,6 @@
         <button class="button" data-modal-open="">Заказать услугу</button>
       </div>
       <!-- модальное окно -->
-      <div class="backdrop is-hidden" data-modal="">
-        <div class="pop-up-window">
-          <form action="pop-up-form">
-            <p class="form-appeal">Оставьте свои данные, мы вам перезвоним</p>
-            <label class="data">
-              <input class="data-input" type="text" name="user-name" placeholder=" ">
-              <span class="form-text">
-                Имя
-              </span>
-              <svg class="form-icon" width="18px" height="18px">
-                <use href="./image/sprite.svg#person"></use>
-              </svg>
-            </label>
-
-            <label class="data">
-              <input class="data-input" type="tel" name="user-name" placeholder=" ">
-              <span class="form-text">
-                Телефон
-              </span>
-              <svg class="form-icon" width="18px" height="18px">
-                <use href="./image/sprite.svg#phone-form"></use>
-              </svg>
-            </label>
-
-            <label class="data">
-              <input class="data-input" type="email" name="user-name" placeholder=" ">
-              <span class="form-text">
-                Почта
-              </span>
-              <svg class="form-icon" width="18px" height="18px">
-                <use href="./image/sprite.svg#email-form"></use>
-              </svg>
-            </label>
-            <label class="data comment">
-              <textarea class="data-input comment-form" rows="10" name="comment" placeholder=" "></textarea>
-              <span class="form-text comment-text">
-                Комментарий
-              </span>
-            </label>
-            <label class="data-policy">
-              <input class="checkbox" type="checkbox" name="policy">
-              <span class="checkbox-icon"></span>
-              <span class="text-policy">
-                Согласен с рассылкой и принимаю
-                <a class="deal-link" href=" "> Условия договора</a>
-              </span>
-            </label>
-          </form>
-          <button class="button-close" data-modal-close="">
-            <svg class="close" width="11" height="11">
-              <use href=./image/sprite.svg#close></use>
-            </svg>
-          </button>
-          <button type="submit" class="button">Отправить</button>
-        </div>
-      </div>
     </section>
 
     <!-- секция наши преимущества -->
@@ -403,7 +347,62 @@
       </div>
     </section>
   </main>
+  <div class="backdrop is-hidden" data-modal="">
+    <div class="pop-up-window">
+      <form action="pop-up-form">
+        <p class="form-appeal">Оставьте свои данные, мы вам перезвоним</p>
+        <label class="data">
+          <input class="data-input" type="text" name="user-name" placeholder=" ">
+          <span class="form-text">
+            Имя
+          </span>
+          <svg class="form-icon" width="18px" height="18px">
+            <use href="./image/sprite.svg#person"></use>
+          </svg>
+        </label>
 
+        <label class="data">
+          <input class="data-input" type="tel" name="user-name" placeholder=" ">
+          <span class="form-text">
+            Телефон
+          </span>
+          <svg class="form-icon" width="18px" height="18px">
+            <use href="./image/sprite.svg#phone-form"></use>
+          </svg>
+        </label>
+
+        <label class="data">
+          <input class="data-input" type="email" name="user-name" placeholder=" ">
+          <span class="form-text">
+            Почта
+          </span>
+          <svg class="form-icon" width="18px" height="18px">
+            <use href="./image/sprite.svg#email-form"></use>
+          </svg>
+        </label>
+        <label class="data comment">
+          <textarea class="data-input comment-form" rows="10" name="comment" placeholder=" "></textarea>
+          <span class="form-text comment-text">
+            Комментарий
+          </span>
+        </label>
+        <label class="data-policy">
+          <input class="checkbox" type="checkbox" name="policy">
+          <span class="checkbox-icon"></span>
+          <span class="text-policy">
+            Согласен с рассылкой и принимаю
+            <a class="deal-link" href=" "> Условия договора</a>
+          </span>
+        </label>
+        <button type="submit" class="button">Отправить</button>
+      </form>
+      <button class="button-close" data-modal-close="">
+        <svg class="close" width="11" height="11">
+          <use href=./image/sprite.svg#close></use>
+        </svg>
+      </button>
+    </div>
+  </div>
   <!-- footer -->
   <footer class="footer">
     <div class="container">

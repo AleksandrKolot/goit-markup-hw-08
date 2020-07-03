@@ -1,7 +1,7 @@
 //  header 
 .header {
   position: relative;
-  border-bottom: 2px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
 
   @media screen and (max-width: 767px) {
     position: fixed;
@@ -11,9 +11,11 @@
   }
 }
 .hidden {
-  border: hidden; 
+  @media screen and (min-width: 768px){
+    border: hidden; 
+  }
+  
 }
-
 
 .batton-menu {
   margin-left: auto;
@@ -41,16 +43,19 @@
   display: block;
 }
 
+
+
 .header-menu {
 
   @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 101%;
     left: 0;
 
-    width: 100%;
-    padding: 60px 20px;
+    width: 101%;
+    min-height: 400px;
+    padding: 60px 0px;
     background-color: $primary-bg-color;
     box-shadow: 0px 1px 3px rgba(0,0,0,0.16), 
     0px 2px 4px rgba(0,0,0,0.08), 
@@ -167,7 +172,9 @@
   }
   @media screen and (min-width: 1200px){
     display: flex;
-    align-items: baseline;
+    justify-content: center;
+    align-items: center;
+
   }
 }
 
@@ -177,6 +184,7 @@
   &:hover, &:focus{
     color:  $accent-color;
   }
+  
 }
 .phone {
   @extend %mail-phone-style;

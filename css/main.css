@@ -60,6 +60,17 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 767px) {
+  .mail, .phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .work-title, .team-title, .clients-title {
   font-size: 28px;
   line-height: 1.18;
@@ -134,9 +145,16 @@ img {
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   color: #2196F3;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo-studio {
@@ -145,9 +163,7 @@ img {
 
 .footer .logo {
   display: block;
-  font-size: 22px;
-  line-height: 1.18;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .footer .logo-studio {
@@ -178,6 +194,12 @@ img {
   background-color: #1489e9;
 }
 
+.pop-up-window .button {
+  display: inherit;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .footer .subscribe .button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -195,7 +217,7 @@ img {
 
 .header {
   position: relative;
-  border-bottom: 2px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
 }
 
 @media screen and (max-width: 767px) {
@@ -207,8 +229,10 @@ img {
   }
 }
 
-.hidden {
-  border: hidden;
+@media screen and (min-width: 768px) {
+  .hidden {
+    border: hidden;
+  }
 }
 
 .batton-menu {
@@ -244,10 +268,11 @@ img {
   .header-menu {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 101%;
     left: 0;
-    width: 100%;
-    padding: 60px 20px;
+    width: 101%;
+    min-height: 400px;
+    padding: 60px 0px;
     background-color: #ffffff;
     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
@@ -382,9 +407,12 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 

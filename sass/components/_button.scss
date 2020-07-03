@@ -21,6 +21,12 @@
     background-color: #1489e9;
   }
 
+  .pop-up-window & {
+    display: inherit;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .footer .subscribe & {
     display: inline-flex;
     align-items: center;
