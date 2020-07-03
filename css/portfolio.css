@@ -292,7 +292,7 @@ img {
     position: absolute;
     top: 101%;
     left: 0;
-    width: 101%;
+    width: 100%;
     min-height: 400px;
     padding: 60px 0px;
     background-color: #ffffff;
